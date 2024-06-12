@@ -1,55 +1,57 @@
 body {
-    background-color: #c4b5eb;
-    /* background-image: url('../WeddingWebsite/Assets/BluePurpleBG.jpg'); */
-    /* background-size: 100%;
-    width: 100%;
-    height: 100%; */
+    background-color: #c7adde;
+    background-repeat: no-repeat;
+    /* cover stretches image vs contain image keeps ratio while showing all image*/
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-.container {
+h1{
     position: relative;
+    top: 30%;
+    left: 43%;
+    font-size: 4vw;
+    font-family:'Times New Roman', Times, serif;
 }
-
  .btn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
+    position: relative;
+    top: 40%;
+    left: 30%;
     background-color: #C0C5EB;
     color: #4C4186;
-    font-size: 16px;
+    font-size: 1.5vw;
     font-family:'Times New Roman', Times, serif;
-    padding: 12px 24px;
+    padding: 1vp 1vp;
     border: none;
   }
 
 #info {
-    position: absolute;
-    top: 25%;
-    left: 55%;
-    font-size: 25px;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    font-size: 2vw;
+    size-adjust: auto;
     color: #3A4280;
     font-family:'Times New Roman', Times, serif;
 }
 
 #email {
-    position: absolute;
-    top: 29%;
-    left: 55%;
-    font-size: 20px;
+    position: relative;
+    top: 15vw;
+    left: 40vw;
+    font-size: 2vw;
     color: #1f2553;
     font-family:'Times New Roman', Times, serif;
 }
 
 #para {
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    font-size: 20px;
+    position: relative;
+    top: 27vh;
+    left: 35vw;
+    font-size: 1.7vw;
     color: #1f2553;
 }
 
@@ -61,3 +63,32 @@ color: #C0C5EB;
 img {
     width: 100%;
 }
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #5e5484;
+    width: 100%;
+    height: auto;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #6580bb;
+    color: white;
+  }
+  
