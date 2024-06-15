@@ -123,8 +123,9 @@ img {
 
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll;
         background-size: 100%;
+        overflow-x: hidden;
+        padding-top: 10px;
     }
     h1 {
         font-size: 6vw;
@@ -134,8 +135,8 @@ img {
 
     #rsvpHeader {
         position: relative;
-        top: 29vh;
-        left: 37vw;
+        top: 30%;
+        left: 28%;
         font-size: 1.7vw;
         color: #1f2553;
     }
@@ -154,7 +155,7 @@ img {
         font-family:'Times New Roman', Times, serif;
     }
     .btn {
-        font-size: 3vw;
+        font-size: 2vw;
         left: 30%;
         top: 30%;
     }
