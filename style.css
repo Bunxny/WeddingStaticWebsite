@@ -125,12 +125,11 @@ img {
     body {
         background-size: 100%;
         overflow-x: hidden;
-        padding-top: 10px;
     }
     h1 {
         font-size: 6vw;
         left: 30%;
-        top: 30%;
+        top: 40%;
     }
 
     #rsvpHeader {
@@ -143,11 +142,12 @@ img {
 
     #info {
         font-size: 4vw;
+        position: center;
         left: 20%;
         top: 30%;
     }
     #email {
-        position: relative;
+        position: center;
         top: 30%;
         left: 40vw;
         font-size: 2vw;
