@@ -123,7 +123,7 @@ img {
 
 @media (max-width: 768px) {
     body {
-        background-size: contain;
+        background-attachment: scroll;
     }
     h1 {
         font-size: 6vw;
