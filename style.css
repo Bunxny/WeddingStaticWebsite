@@ -127,36 +127,37 @@ img {
         overflow-x: hidden;
     }
     h1 {
-        font-size: 6vw;
+        font-size: 4vw;
         left: 30%;
-        top: 40%;
+        top: 35%;
     }
 
     #rsvpHeader {
         position: relative;
         top: 30%;
-        left: 28%;
+        left: 25%;
         font-size: 1.7vw;
         color: #1f2553;
     }
 
     #info {
-        font-size: 4vw;
+        size:100%;
+        font-size: 3vw;
         position: center;
-        left: 20%;
+        left: 25%;
         top: 30%;
     }
     #email {
         position: center;
         top: 30%;
-        left: 40vw;
+        left: 25%;
         font-size: 2vw;
         color: #1f2553;
         font-family:'Times New Roman', Times, serif;
     }
     .btn {
         font-size: 2vw;
-        left: 30%;
+        left: 25%;
         top: 30%;
     }
 }
