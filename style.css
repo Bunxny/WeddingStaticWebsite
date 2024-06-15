@@ -9,11 +9,12 @@ body {
     overflow-y: scroll;
     padding-bottom: 15px;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 h1{
     position: relative;
-    top: 15%;
+    top: 19%;
     left: 43%;
     font-size: 4vw;
     font-family:'Times New Roman', Times, serif;
@@ -21,7 +22,7 @@ h1{
 
 .btn {
     position: relative;
-    top: 20%;
+    top: 25%;
     left: 45%;
     background-color: #C0C5EB;
     color: #4C4186;
@@ -55,7 +56,7 @@ h1{
 
 #info {
     position: relative;
-    top: 15%;
+    top: 20%;
     left: 40%;
     font-size: 2vw;
     size-adjust: auto;
@@ -65,7 +66,7 @@ h1{
 
 #email {
     position: relative;
-    top: 8vw;
+    top: 20%;
     left: 40vw;
     font-size: 2vw;
     color: #1f2553;
