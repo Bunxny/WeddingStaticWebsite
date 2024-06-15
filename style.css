@@ -127,9 +127,9 @@ img {
         overflow-x: hidden;
     }
     h1 {
-        font-size: 4vw;
-        left: 30%;
-        top: 35%;
+        font-size: 3vw;
+        left: 35%;
+        top: 40%;
     }
 
     #rsvpHeader {
@@ -155,7 +155,46 @@ img {
     }
     .btn {
         font-size: 2vw;
+        left: 35%;
+        top: 42%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 2vw;
+        left: 35%;
+        top: 40%;
+    }
+
+    #rsvpHeader {
+        position: relative;
+        top: 40%;
         left: 25%;
-        top: 43%;
+        font-size: 1.7vw;
+        color: #1f2553;
+    }
+
+    #info {
+        font-size: 1vw;
+        left: 32%;
+        top: 40%;
+    }
+    #email {
+        position: center;
+        top: 42%;
+        left: 25%;
+        font-size: 1vw;
+        color: #1f2553;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .btn {
+        font-size: 2vw;
+        left: 50%;
+        top: 42%;
     }
 }
