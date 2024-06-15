@@ -5,12 +5,10 @@ body {
     background-size: cover;
     background-position: center;
     max-width: 100%;
-    max-height: 100%;
-    min-width: 480px;
-    overflow-y: scroll;
-    padding-bottom: 15px;
+    min-width: 480px;    
     overflow-x: hidden;
     overflow-y: scroll;
+    padding-bottom: 15px;
 }
 
 h1{
@@ -29,7 +27,7 @@ h1{
     color: #4C4186;
     font-size: 1.5vw;
     font-family:'Times New Roman', Times, serif;
-    padding: 3vp 3vp;
+    padding: .5em 1em;
     border: none;
 }
 
@@ -46,7 +44,7 @@ h1{
     color: #4C4186;
     font-size: 1.5vw;
     font-family:'Times New Roman', Times, serif;
-    padding: 1vp 1vp;
+    padding: .5em 1em;
     border: none;
 }
 
@@ -121,4 +119,22 @@ img {
     width:1px;
     height:1px;
     overflow:hidden;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+        left: 30%;
+        top: 10%;
+    }
+    #info {
+        font-size: 4vw;
+        left: 20%;
+        top: 15%;
+    }
+    .btn {
+        font-size: 3vw;
+        left: 30%;
+        top: 20%;
+    }
 }
