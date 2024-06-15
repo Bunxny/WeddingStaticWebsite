@@ -134,30 +134,28 @@ img {
 
     #rsvpHeader {
         position: relative;
-        top: 30%;
+        top: 40%;
         left: 25%;
         font-size: 1.7vw;
         color: #1f2553;
     }
 
     #info {
-        size:100%;
-        font-size: 3vw;
-        position: center;
-        left: 25%;
-        top: 30%;
+        font-size: 2vw;
+        left: 32%;
+        top: 40%;
     }
     #email {
         position: center;
-        top: 30%;
+        top: 42%;
         left: 25%;
-        font-size: 2vw;
+        font-size: 1vw;
         color: #1f2553;
         font-family:'Times New Roman', Times, serif;
     }
     .btn {
         font-size: 2vw;
         left: 25%;
-        top: 30%;
+        top: 43%;
     }
 }
