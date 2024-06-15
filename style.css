@@ -6,31 +6,56 @@ body {
     background-position: center;
     max-width: 100%;
     max-height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 15px;
     overflow-x: hidden;
 }
 
 h1{
     position: relative;
-    top: 30%;
+    top: 15%;
     left: 43%;
     font-size: 4vw;
     font-family:'Times New Roman', Times, serif;
 }
- .btn {
+
+.btn {
     position: relative;
-    top: 40%;
-    left: 30%;
+    top: 20%;
+    left: 45%;
+    background-color: #C0C5EB;
+    color: #4C4186;
+    font-size: 1.5vw;
+    font-family:'Times New Roman', Times, serif;
+    padding: 3vp 3vp;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(117, 132, 199);
+    color: #C0C5EB;
+}
+
+.aboutCBtn {
+    position: relative;
+    top: 8%;
+    left: 1%;
     background-color: #C0C5EB;
     color: #4C4186;
     font-size: 1.5vw;
     font-family:'Times New Roman', Times, serif;
     padding: 1vp 1vp;
     border: none;
-  }
+}
+
+.aboutCBtn:hover {
+    background-color: rgb(117, 132, 199);
+    color: #C0C5EB;
+}
 
 #info {
     position: relative;
-    top: 40%;
+    top: 15%;
     left: 40%;
     font-size: 2vw;
     size-adjust: auto;
@@ -40,24 +65,19 @@ h1{
 
 #email {
     position: relative;
-    top: 15vw;
+    top: 8vw;
     left: 40vw;
     font-size: 2vw;
     color: #1f2553;
     font-family:'Times New Roman', Times, serif;
 }
 
-#para {
+#rsvpHeader {
     position: relative;
-    top: 27vh;
-    left: 35vw;
+    top: 15vh;
+    left: 37vw;
     font-size: 1.7vw;
     color: #1f2553;
-}
-
-.btn:hover {
-background-color: rgb(117, 132, 199);
-color: #C0C5EB;
 }
 
 img {
@@ -68,27 +88,36 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1030;
     background-color: #5e5484;
     width: 100%;
     height: auto;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
+}
+
+.topnav a:hover {
+    background-color: #b2cddc;
+    color: rgb(41, 33, 48);
+}
+
+.topnav a.active {
     background-color: #6580bb;
     color: white;
-  }
-  
+}
+
+.screenReaderOnlyText {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}

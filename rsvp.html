@@ -1,32 +1,38 @@
 <DOCTYPE! HTML>
 <html>
 <head>
-    <title>Anna's and Hannah's Wedding Invite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
 </head>
 <link
     rel="stylesheet"
     href="style.css">
-<body style="background-image:url(Assets/rsvp.jpg);">
+<body style="background-image:url(assets/rsvp.jpg);">
     <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="info.html">Info</a>
-        <a href="rsvp.html">RSVP</a>
+        <a class="active" href="rsvp.html">RSVP</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Places</a>
       </div>
-    <p id="para">Email or text us c:</p>
+    <h2 id="rsvpHeader">Email or text us c:</h2>
     <form id="email"
         action="mailto:bobbobbynick@gmail.com" method="post" enctype="text/plain">
         Name:<br>
-        <input type="text" name="Name"><br>
+        <input type="text" name="Name" style="height:5vh;"><br>
         <br>
         Method of Attending:<br>
-        <input type="text" name="Method"><br>
-        <br>
+        <select name="Method" style="width: 11vw; height: 5vh;">
+          <option value="Zoom">Zoom</option>
+          <option value="In-Person">In-Person</option>
+        </select> <br> <br>
         Comments:<br>
-        <input type="text" name="Comments"><br><br>
+        <textarea name="Comments"  style="height:10vh; width:20vw;"> </textarea>
+        <br> <br>
         <input type="submit" value="Send" style="font-size:1.3vw;">
         <input type="reset" value="Reset" style="font-size:1.3vw;">
         <br>
-        <a href="rsvp.html"><button class="btn">Finished?</button></a>
     </form>
+    <a href="fin.html"><button class="btn">Finished?</button></a>
 </body>
 </html>

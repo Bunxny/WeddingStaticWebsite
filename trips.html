@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hannah and Anna's Travel Plans</title>
+
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="">
+        </script>
+
+    <style>
+        body {
+        padding: 0;
+        margin: 0;
+        }
+        
+        html, body, #map {
+        height: 100%;
+        width: 100%;
+        }
+
+        .descrip {
+            width:  250 px;
+            font-size: 16px;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            padding: 10px 14px;
+            background-color: #aedaff;
+            border-radius: 5px;
+            border: 5px solid #bdaade;
+        }
+
+        .topnav {
+            position: fixed;
+            top: 0;
+            z-index: 1030;
+            background-color: #5e5484;
+            width: 100%;
+            height: auto;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #b2cddc;
+            color: rgb(41, 33, 48);
+        }
+
+        .topnav a.active {
+            background-color: #6580bb;
+            color: white;
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="rsvp.html">RSVP</a>
+            <a href="about.html">About</a>
+            <a class="active" href="trips.html">Places</a>
+        </div>
+        <!-- to hide from screen reader <div id="map" inert></div> -->
+        <div id="map"></div>
+        <script>
+            //map setting
+            var map = L.map("map", {center: [39.9526, -75.1652], zoom: 15, scrollWheelZoom: true});
+            var openStreet = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            
+
+            //marker and line on map
+            var line = L.polyline([[39.95462, -75.1566], [39.95412, -75.15476], [39.95366, -75.15605], [39.95514, -75.15744], [39.95535, -75.15442]]).addTo(map);
+
+            var place = L.marker([39.95462, -75.1566])
+            .bindPopup('<h1>Mango Mango</h1><p>This cafe has refreshing fruit desserts!</p>')
+            .addTo(map);
+
+            var place = L.marker([39.95412, -75.15476])
+            .bindPopup('<h1>Happy DIY</h1><p>This is the place to go to decorate a variety of items with cute charms!</p>')
+            .addTo(map);
+
+            var place = L.marker([39.95366, -75.15605])
+            .bindPopup('<h1>Little Seven\'s house</h1><p>This place has cute clothes and cute knick-knacks!</p>')
+            .addTo(map);
+
+            var place = L.marker([39.95514, -75.15744])
+            .bindPopup('<h1>You&Me</h1><p>A trendy Asain supermarket with plushies, claw machines, and even makeup!</p>')
+            .addTo(map);
+
+            var place = L.marker([39.95535, -75.15442])
+            .bindPopup('<h1>Matcha Panda Cafe</h1><p>A cafe with boba and not too sweet desserts!</p>')
+            .addTo(map);
+
+            //box description and style
+            var descrip = L.control({position: 'bottomleft'});
+                descrip.onAdd = function() {
+                let div = L.DomUtil.create('div', 'descrip');
+                div.innerHTML =
+                    '<h1>Places We Plan to Go!</h1><hr>' + 
+                    '<p>It is always nice to travel with friends so let us know</p>' +
+                    '<p>if you are interested in joining us on our trips.</p>' +
+                    '<h3>Places:</h3>'+
+                    '<ul><li>China Town Philly</li></ul>';
+                return div;
+            };
+            descrip.addTo(map);
+        </script>
+
+    </body>
