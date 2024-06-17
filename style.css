@@ -124,7 +124,7 @@ img {
 
 @media (max-width: 600px) {
     body {
-        background-image: 100%;
+        background-image: contain;
         overflow: hidden;
     }
     h1 {
@@ -136,8 +136,8 @@ img {
 
     #rsvpHeader {
         position: relative;
-        top: 40%;
-        left: 35%;
+        top: 140px;
+        left: 132px;
         font-size: 2vw;
         color: #1f2553;
     }
@@ -151,9 +151,9 @@ img {
 
     #email {
         position: relative;
-        font-size: 1vw;
-        left: 35%;
-        top: 50%;
+        font-size: 3vw;
+        left: 135px;
+        top: 150px;
     }
 
     .btn {
