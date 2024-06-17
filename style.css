@@ -123,6 +123,9 @@ img {
 
 
 @media (max-width: 480px) {
+    body {
+        background-image: contain;
+    }
     h1 {
         position: relative;
         font-size: 3vw;
