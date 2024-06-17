@@ -121,54 +121,17 @@ img {
     overflow:hidden;
 }
 
-@media (max-width: 500px) {
-    body {
-        background-size: 100%;
-        overflow: hidden;
-    }
-    h1 {
-        font-size: 6vw;
-        left: 35%;
-        top: 40%;
-    }
-
-    #rsvpHeader {
-        position: relative;
-        top: 40%;
-        left: 25%;
-        font-size: 1.7vw;
-        color: #1f2553;
-    }
-
-    #info {
-        font-size: 2vw;
-        left: 32%;
-        top: 40%;
-    }
-    #email {
-        position: center;
-        top: 42%;
-        left: 25%;
-        font-size: 1vw;
-        color: #1f2553;
-        font-family:'Times New Roman', Times, serif;
-    }
-    .btn {
-        font-size: 2vw;
-        left: 35%;
-        top: 42%;
-    }
-}
-
 
 @media (max-width: 480px) {
     h1 {
+        position: relative;
         font-size: 3vw;
         left: 35%;
         top: 45%;
     }
 
     #rsvpHeader {
+        position: relative;
         top: 40%;
         left: 35%;
         font-size: 2vw;
@@ -176,18 +139,21 @@ img {
     }
 
     #info {
+        position: relative;
         font-size: 1.8vw;
         left: 35%;
         top: 45%;
     }
 
     #email {
+        position: relative;
         font-size: 1vw;
         left: 35%;
         top: 50%;
     }
 
     .btn {
+        position: relative;
         font-size: 1.8vw;
         left: 35%;
         top: 45.5%;
