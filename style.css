@@ -124,6 +124,7 @@ img {
 
 @media (max-width: 600px) {
     body {
+        position: center;
         background-image: contain;
         overflow: hidden;
     }
