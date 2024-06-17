@@ -124,7 +124,7 @@ img {
 
 @media (max-width: 480px) {
     body {
-        background-image: contain;
+        background-image: 100%;
     }
     h1 {
         position: relative;
