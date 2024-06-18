@@ -126,7 +126,7 @@ img {
     body {
         position: relative;
         background-size: contain;
-        overflow: scroll;
+        overflow: hidden;
     }
     h1 {
         position: relative;
