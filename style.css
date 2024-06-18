@@ -124,9 +124,9 @@ img {
 
 @media (max-width: 600px) {
     body {
-        position: center;
+        position: relative;
         background-image: contain;
-        overflow: hidden;
+        overflow: scroll;
     }
     h1 {
         position: relative;
