@@ -125,8 +125,7 @@ img {
 @media (max-width: 700px) {
     body {
         position: relative;
-        width: fit-content;
-        background-image: contain;
+        background-size: contain;
         overflow: scroll;
     }
     h1 {
