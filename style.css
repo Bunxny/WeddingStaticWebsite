@@ -137,7 +137,7 @@ img {
 
     #rsvpHeader {
         position: relative;
-        top: 240px;
+        top: 140px;
         left: 132px;
         font-size: 3vw;
         color: #1f2553;
@@ -145,16 +145,16 @@ img {
 
     #info {
         position: relative;
-        font-size: 3vw;
-        left: 140px;
-        top: 150px;
+        font-size: 2vw;
+        left: 120px;
+        top: 160px;
     }
 
     #email {
         position: relative;
         font-size: 2vw;
         left: 135px;
-        top: 250px;
+        top: 150px;
     }
 
     .btn {
